@@ -1,0 +1,259 @@
+body{
+    font-family:Araial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/*global*/
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.button-1{
+    height: 38px;
+    background-color: #e8491d;
+    border: 0;
+    padding: 0 20px 0 20px;
+    color: #ffffff;
+}
+    
+    .dark{
+        padding: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        background: #35424a;
+        color: #ffffff;
+        border-bottom: 3px solid #e8491d;  
+    }
+    
+
+/*header*/
+
+header{
+    background: #35424a;
+    color: #ffffff;
+    padding-top:30px;
+    min-height: 70px;
+    border-bottom: 3px #e8491d solid;
+    
+    
+}
+
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+
+header li{
+    float: left;
+    text-decoration: none;
+    display: inline;
+    padding: 0 20px 0 20px;
+    
+}
+
+header #branding{
+    float: left;
+    
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+    
+}
+
+#branding  h1  span{
+    color: #e8491d;
+    font-weight: bold;
+} 
+
+header .current a{
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+
+/*banner*/
+
+#banner{
+    min-height: 400px;
+    background: url(
+    img/showcase.jpg) no-repeat 0 -400px;
+    color: #ffffff;
+    text-align: center;
+    
+}
+
+#banner h1{
+    margin-top: 100px;
+    font-size: 3em;
+    margin-bottom: 10px;
+    
+}
+
+#banner p{
+    font-size: 1.4em;
+    
+}
+
+#newslatter{
+    
+    padding: 15px;
+    color: #ffffff;
+    background: #35423a;
+}
+
+#newslatter h1{
+    float: left;
+}
+
+#newslatter form{
+    float: right;
+    margin-top: 15px;
+}
+
+#newslatter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+    
+}
+
+/*boxes*/
+
+#boxes{
+    margin-top: 15px;
+    
+}
+
+#boxes .box{
+    float:left;
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+    
+
+}
+
+#boxes .box img{
+    width: 90px;
+}
+
+/*article and sidebar*/
+
+aside#sidebar{
+    float: right;
+    width: 30%;
+    padding: 15px;
+}
+
+article#main-col{
+    float: left;
+    width: 65%;
+    padding: 15px;
+}
+
+/*services*/
+
+ul#services li{
+    list-style: none;
+    padding: 15px;
+    background: #e6e6e6;
+    border: 1px solid #cccccc;
+    
+}
+aside#sidebar .qoute input, aside#sidebar .qoute textarea{
+    width: 90%;
+    padding: 10px;
+}
+
+/*mediaquery*/
+
+@media(max-width:768px){
+    header#branding, header nav, header nav li{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    
+    header{
+        padding-bottom: 20px;
+    }
+    
+    header li{
+        display: block;
+    }
+    
+    header #branding h1{
+        
+        margin-left: 80px;
+    }
+    #banner h1{
+        font-size: 30px;
+    }
+    
+    #newslatter h1,form{
+        float: none;
+        text-align: center;
+        
+        
+    }
+    #newslatter button, .qoute button{
+        display: block;
+        width: 100%;
+     
+        
+    }
+    #boxes .box{
+        float: none;
+        width: 100%;
+    }
+/*        aboute us*/
+    
+    
+
+article#main-col, aside#sidebar{
+        text-align: center;
+        float: none;
+        width: 100%;
+    }
+}
+
+
+
+
+/*footer*/
+
+footer{
+    background-color: #35424a;
+    min-width: 70px;
+    text-align: center;
+    color: #ffffff;
+    border-top: 3px #e8491d solid;
+    
+}
+
+
